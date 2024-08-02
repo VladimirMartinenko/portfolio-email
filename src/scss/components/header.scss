@@ -1,0 +1,242 @@
+.header {
+  background-color: #292F36;
+  font-family: IBMPlexMono;
+  font-weight: medium;
+  font-size: 32px;
+  line-height: 42px;
+  width: 100%;
+  transition: background-color var(--bs-transition);
+  z-index: 50;
+  @include media-mx(768) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @include media-mx(540) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header-is-sticky & {
+    // ..стили для липкого хедера
+    position: fixed;
+    background-color: #292F36;
+    opacity: 0.8;
+  }
+
+  // .header__container
+  &__container {
+    width: 100%;
+    height: rem($headerHeight);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #43454D;
+
+    .header-is-sticky & {
+      height: rem($headerHeight - 50);
+    }
+  }
+  &__logo {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+  }
+}
+.wrapper_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(32);
+  }
+
+.logo {
+  color: #12F7D6;
+}
+.header__menu{
+  display: flex;
+  align-items: center;
+  gap:30px;
+  // padding-right: 3em;
+}
+.menu__list{
+  display:flex;
+  align-items: center;
+  gap:rem(30);
+  @include media-mx(430) {
+    gap: rem(17);
+  }
+}
+.menu__item{
+  display:flex;
+  align-items: center;
+}
+.menu__link{
+  color:var(--bs-font-color) ;
+  font-family: Ibn;
+  line-height: 32px;
+  font-size: rem(24);
+  @include media-mx(1050) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  transition: 0.5s;
+}
+.menu__link:hover{
+  color:var(--primary-color);
+}
+.search-form {
+  position: relative;
+  width: 204px;
+  height: 32px;
+  border-radius: 24px;
+  transform: translate(0%, 0%);
+  background: #F9FBFF;
+  transition: all 0.3s ease;
+
+  &.focus {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  }
+  @include media-mx(1330) {
+    display: none;
+   }
+  
+}
+
+.search-input {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 14px;
+  background: none;
+  color: #5a6674;
+  width: 150px;
+  height: 32px;
+  border: none;
+  appearance: none;
+  outline: none;
+
+  &::-webkit-search-cancel-button {
+    appearance: none;
+  }
+}
+.networks{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  @include media-mx(940) {
+    display: none;
+  }
+
+  &__link{
+    font-family: Ibn;
+    font-size: rem(16);
+    line-height: rem(20);
+    color:var(--bs-font-color) ;
+    @include media-mx(1280) {
+      display: none;
+    }
+  }
+}
+.networks__link:hover{
+  color:var(--primary-color);
+  text-shadow: 0 0 10px ;
+}
+.search_button_icon{
+  background: none;
+  color:var(--bs-font-color) ;
+  @include media-mn(1330) {
+    display: none;
+  }
+}
+.search-button {
+  position: absolute;
+  top: 8.5px;
+  right: 20.17px;
+  height: 13.33px;
+  width: 13.33px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none!important;
+  cursor: pointer;
+}
+
+
+// .active ~ .about_icon{
+//   border-bottom: 1px solid var(--primary-color);
+//     color: var(--primary-color);
+// }
+
+
+// .about_icon{
+//   .active &{
+//     border-bottom: 1px solid var(--primary-color);
+//     color: var(--primary-color);
+//   }
+
+// }
+// .link{
+//   color: #FFFFFF;
+//   padding-bottom: 16px;
+// }
+// .cart__border{
+//   padding: 2px;
+//   border-left: 20px solid var(--primary-color);
+//   border-top: 7px solid var(--primary-color);
+// }
+// Burger
+
+// .icon-menu {
+//   display: none;
+
+//   @include media-mx(768) {
+//     display: block;
+//     position: relative;
+//     width: rem(30);
+//     height: rem(18);
+//     cursor: pointer;
+//     z-index: 5;
+
+//     span,
+//     &::before,
+//     &::after {
+//       content: "";
+//       transition: all 300ms ease 0ms;
+//       right: 0;
+//       position: absolute;
+//       width: 100%;
+//       height: rem(2);
+//       background-color: #000;
+//     }
+
+//     &::before {
+//       top: 0;
+//     }
+
+//     &::after {
+//       bottom: 0;
+//     }
+
+//     span {
+//       top: calc(50% - rem(1));
+//     }
+
+//     .menu-open & {
+//       span {
+//         width: 0;
+//       }
+
+//       &::before {
+//         top: calc(50% - rem(1));
+//         transform: rotate(-45deg);
+//       }
+
+//       &::after {
+//         bottom: calc(50% - rem(1));
+//         transform: rotate(45deg);
+//       }
+//     }
+//   }
+// }
+

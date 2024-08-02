@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'icomoon';
+  // src:  url('fonts/icomoon.eot?us2w76');
+  // src:  url('fonts/icomoon.eot?us2w76#iefix') format('embedded-opentype'),
+  //   url('fonts/icomoon.ttf?us2w76') format('truetype'),
+  //   url('fonts/icomoon.woff?us2w76') format('woff'),
+  //   url('fonts/icomoon.svg?us2w76#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+._icon-docker:before {
+  content: "\e917";
+  color: #1488c6;
+}
+._icon-mongodb:before {
+  content: "\e918";
+  color: #47a248;
+}
+._icon-node-dot-js:before {
+  content: "\e919";
+  color: #393;
+}
+._icon-postgresql:before {
+  content: "\e91a";
+  color: #336791;
+}
+._icon-mysql:before {
+  content: "\e91b";
+  color: #4479a1;
+}
+._icon-right:before {
+  content: "\e900";
+}
+._icon-stroke-line:before {
+  content: "\e901";
+}
+._icon-line:before {
+  content: "\e902";
+}
+._icon-loading:after {
+  content: "\e903";
+  padding-left: 16px;
+}
+._icon-letter:before {
+  content: "\e904";
+  padding-right: 16px;
+}
+._icon-tv:before {
+  content: "\e905";
+}
+._icon-left:before {
+  content: "\e906";
+}
+._icon-arrow:before {
+  content: "\e907";
+}
+._icon-cursor:after {
+  content: "\e908";
+  padding-left: rem(16);
+}
+._icon-file:before {
+  content: "\e909";
+  padding-right: 16px;
+}
+._icon-skills:before {
+  content: "\e90a";
+  padding-right: 16px;
+}
+._icon-about:before {
+  content: "\e90b";
+}
+._icon-square:before {
+  content: "\e90c";
+}
+._icon-react:before {
+  content: "\e90d";
+}
+._icon-dot:before {
+  content: "\e90e";
+  padding-right: 16px;
+}
+._icon-mouse:before {
+  content: "\e90f";
+}
+._icon-html:before {
+  content: "\e910";
+}
+._icon-css:before {
+  content: "\e911";
+}
+._icon-js:before {
+  content: "\e912";
+}
+._icon-git:before {
+  content: "\e913";
+  color: var(--primary-color);
+  padding-right: 8px;
+}
+._icon-icon-search:before {
+  content: "\e914";
+}
+._icon-instagram:before {
+  content: "\e915";
+  color: var(--primary-color);
+  padding-right: 8px;
+}
+._icon-cursor-black:after {
+  content: "\e916";
+  padding-left: 16px;
+}

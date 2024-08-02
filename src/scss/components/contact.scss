@@ -1,0 +1,87 @@
+.contact{
+  background: #292F36;
+  &_content{
+    margin-top: rem(102);
+    color: var(--primary-color);
+    font-size: rem(32);
+    line-height: rem(42);
+    border: 1px solid var(--primary-color);
+    border-radius: rem(40) 0 rem(40) 0;
+    padding: 16px 40px 16px 40px ;
+    font-weight: medium;
+    @include media-mx(460) {
+      font-size: rem(24);
+    }
+  }
+}
+.contact form {
+  padding: rem(64) rem(20) rem(64) rem(20) ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(64);
+}
+.input-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  gap: rem(128) ;
+  @include media-mx(800) {
+    gap: rem(64) ;
+  }
+  @include media-mx(550) {
+    gap: rem(24) ;
+  }
+}
+.field .item{
+  min-height:40px;
+  width: 100%;
+  background: #292F36;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--white-color);
+  padding-bottom: rem(8);
+}
+.field{
+  width: 100%;
+}
+.field.error .item{
+  border-bottom:1px solid red;
+}
+.field .error_text{
+  font-size: rem(15);
+  color: red;
+  margin-top: rem(10);
+  display: none;
+}
+.field.error .error_text{
+  display: block;
+}
+.field .item::placeholder{
+  color: var(--white-color);
+  font-size: rem(16);
+  line-height: rem(20);
+  padding-bottom: rem(8);
+}
+form .textarea-field,.item{
+  resize: none;
+}
+.top_text{
+  color:  var(--primary-color);
+  padding-bottom: rem(24);
+}
+form button{
+  font-size: rem(20);
+  line-height: rem(24);
+  padding: rem(16) rem(32);
+  background: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transform: rotate3d(100,1,1,100deg);
+  transition: 1s;
+}
+form button:hover{
+  box-shadow: 0 0 10px var(--primary-color);
+}
