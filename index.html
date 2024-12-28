@@ -13,11 +13,11 @@
   <title>Главная</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20241209210125">
+  <link rel="stylesheet" href="css/main.min.css?_v=20241228212954">
 
-  <script src="https://smtpjs.com/v3/smtp.js?_v=20241209210125"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11?_v=20241209210125"></script>
-  <script defer="defer" src="js/main.min.js?_v=20241209210125"></script>
+  <script src="https://smtpjs.com/v3/smtp.js?_v=20241228212954"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11?_v=20241228212954"></script>
+  <script defer="defer" src="js/main.min.js?_v=20241228212954"></script>
 </head>
 
   <body>
@@ -37,8 +37,8 @@
         <div class="works">
           <div class="__container"> 
             
-              <h1 class="base__content_tittle" style="color: #9efb4f; display: none;"><a href="#contact" style="font-size: 60px;">Interesting offer for my clients<img class="icon_arrow" src="https://vladimirmartinenko.github.io/portfolio-email/images/arrow.png"></a></h1>
-              <p class="text__tittle">
+              <h1 class="base__content_tittle" style="color: #9efb4f;"><a href="#contact" style="font-size: 60px;">Interesting offer for my clients.Click here<img class="icon_arrow" src="https://vladimirmartinenko.github.io/portfolio-email/images/arrow.png"></a></h1>
+              <p class="_anim_items run text__tittle">
                 Сreate and testing responsive html emails and signature in outlook, gmail,mail and other email clients.<br>
                 Convert PSD, XD, Figma to HTML, compatible with Mailchimp, Stripo, MailerLite, SendGrid...
               </p>
@@ -2899,7 +2899,7 @@
                     
                   </div>
 
-                  <div class="base__email email">
+                  <div class="email base__email">
                     <div class="email__wrap-img">
                     <a href="./4.html" class="email__link">
                       <img class="email__img" src="https://vladimirmartinenko.github.io/portfolio-email/images/letter4.png" data-type="popup-10">
@@ -2941,7 +2941,49 @@
           </div>
         
         </div>
+        <section class="contact" id="contact">
+  <div class="__container">
+  
+  <div class="base__content">
+    <h1 class="base__content_tittle" style="text-decoration: underline #9efb4f; color: #ffffff;">Right here!</h1>
+    <p class="base__content_text" style="color:rgb(84, 214, 51);font-size: 46px;">You can try the template signatures on your mail agent</p>
+    <div class="contact_content">Send yourself a template</div>
+    <form action="#" id="form">
+      <div class="input-box">
         
+        <div class="field input-field">
+          <div class="top_text">Your email *</div>
+          <input type="text" placeholder="Enter your email" id="email" class="item" autocomplete="off">
+          <div class="email error_text">Email can`t be blank</div>
+        </div>
+      </div>
+        <div class="field texterea-field">
+          <div class="top_text">Select a template to send *</div>
+          
+
+          
+          <select class="item" id="template">
+              <option value="1">Marcy Taylor</option>
+              <option value="2">Joanna Smit</option>
+              <option value="3">Oliviya Williams</option>
+              <option value="4">Amy Blare</option>
+              <option value="5">Johan Smith</option>
+              <option value="6">Emma Brown</option>
+              <option value="7">Amelia Miller</option>
+              <option value="8">Joe Richardson</option>
+              <option value="9">Jon Main</option>
+              <option value="10">Kieran Thompson</option>
+              <option value="11">Emma Davis</option>
+              <option value="12">Deniz Rickli</option>
+          </select>
+          <div class="error_text">Message can`t be blank</div>
+        </div>
+      <button type="submit" class="_anim_items _icon-cursor-black">Send Message</button>
+    </form>
+  </div>
+</div>
+</section>
+
       </main>
       <footer class="footer">
   <div class="footer__container">
