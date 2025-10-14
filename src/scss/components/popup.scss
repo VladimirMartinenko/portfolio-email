@@ -25,6 +25,12 @@
     }
   }
 
+  &__number{
+    color:#12F7D6 ;
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
   // .popup__wrapper
   &__wrapper {
     display: flex;
@@ -39,8 +45,9 @@
     margin: 0 auto;
 
     /** Установить свои значения */
-    padding: rem(30) rem(50);
-    max-width: rem(690);
+    padding: rem(0) rem(0);
+    // max-width: rem(690);
+    max-width: 90%;
     background-color: $white-100;
     transform: translateY(rem(-200));
     opacity: 0;
@@ -52,16 +59,17 @@
     position: absolute;
 
     /** Установить свои значения */
-    top: rem(20);
-    right: rem(20);
+    top: rem(3);
+    right: rem(0);
     width: rem(40);
     height: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
-    color: #000;
+    color:#ff0000;
     border-radius: rem(8);
+    font-size: 20px;
   }
   &__img {
     width: 100%;
