@@ -2477,7 +2477,7 @@ form.addEventListener('submit', (e) => {
   if (!email.classList.contains("error") ){
     console.log(body);
     sendEmail();
-    postData('https://829470-vds-teslabest87.gmhost.pp.ua/api/mailer', { body })
+    postData('', { body })
     .then((data) => {
       console.log(data); 
     });
